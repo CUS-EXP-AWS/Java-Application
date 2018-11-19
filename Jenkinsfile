@@ -1,7 +1,7 @@
 pipeline {
 
     agent any
-  /*  tools {
+    tools {
         maven 'maven-default'
         jdk 'jdk-1.8'
     }
@@ -10,7 +10,7 @@ pipeline {
         JAVA_HOME = "${tool 'jdk-1.8'}"
         PATH = "${JAVA_HOME}/bin:${PATH}"
 
-    } */
+    } 
 
     options {
         disableConcurrentBuilds()
