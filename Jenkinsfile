@@ -10,7 +10,7 @@ pipeline {
         JAVA_HOME = "${tool 'jdk-1.8'}"
         PATH = "${JAVA_HOME}/bin:${PATH}"
 
-    } 
+    }
 
     options {
         disableConcurrentBuilds()
