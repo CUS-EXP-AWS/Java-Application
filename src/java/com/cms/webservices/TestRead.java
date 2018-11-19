@@ -1,6 +1,6 @@
 /*
  * Created on Apr 12, 2007 by Zach Bailey
- * 
+ *
  * Please feel free to distribute this code in any way, with or without this notice.
  */
 package com.cms.webservices;
@@ -20,7 +20,7 @@ import com.hannonhill.www.ws.ns.AssetOperationService.ReadResult;
 
 /**
  * Tests the webservices framework by doing a read of the ROOT folder.
- * 
+ *
  * @author Zach Bailey
  * @since 0.1
  */
@@ -30,16 +30,16 @@ public class TestRead
      * <p>
      * Tests reading of the Base Folder in a given Site
      * </p>
-     * 
+     *
      * <p>
      * From inside Eclipse, run this test using:
      * </p>
-     * 
+     *
      * <ul>
      * <li>alt+shift+x, t (Windows)</li>
      * <li>option+command+x, t (Mac)</li>
      * </ul>
-     * 
+     *
      * @throws Exception
      */
     @Test
@@ -48,7 +48,7 @@ public class TestRead
         Identifier toRead = new Identifier();
         Path path = new Path();
         path.setPath("/");
-        path.setSiteName("example.com");
+        path.setSiteName("VasudevRamisetti");
         toRead.setPath(path);
         toRead.setType(EntityTypeString.folder);
 
