@@ -1,6 +1,7 @@
 pipeline {
 
-    agent { label 'led689' }
+    //agent { label 'led689' }
+    agent any 
     tools {
         maven 'maven-default'
         jdk 'jdk-1.8'
