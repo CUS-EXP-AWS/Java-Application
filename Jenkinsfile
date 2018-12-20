@@ -1,6 +1,6 @@
 pipeline {
 
-    agent { label 'led689' }
+    agent { label 'led0689' }
     //agent any
     tools {
         maven 'maven-default'
