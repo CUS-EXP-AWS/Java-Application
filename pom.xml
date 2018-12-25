@@ -5,6 +5,15 @@
     <artifactId>Cascade-Java-Web-Services-Example-Project</artifactId>
     <version>8.11-SNAPSHOT</version>
 
+
+
+     <scm>
+    	<connection>scm:git:git@github.com:CUS-EXP-AWS/Java-Application.git</connection>
+    	<url>git@github.com:CUS-EXP-AWS/Java-Application.git</url>
+    	<developerConnection>scm:git:git@github.com:CUS-EXP-AWS/Java-Application.git</developerConnection>
+    	<tag></tag>
+    </scm>
+
     <properties>
        <maven.test.skip>true</maven.test.skip>
    </properties>
