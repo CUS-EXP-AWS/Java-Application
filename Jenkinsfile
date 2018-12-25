@@ -1,6 +1,6 @@
 pipeline {
 
-    agent { label 'led0689' }
+    agent { label 'RHEL7-LABLE' }
    // agent any
     tools {
         maven 'maven-default'
@@ -54,7 +54,7 @@ pipeline {
                     def server = Artifactory.server('artifacts')
                     def rtMaven = Artifactory.newMavenBuild()
                     rtMaven.deployer server: server, releaseRepo: 'libs-release', snapshotRepo: 'libs-snapshot'
-                  //  rtMaven.resolver server: server, releaseRepo: 'libs-release', snapshotRepo: 'libs-snapshot'
+                    rtMaven.resolver server: server, releaseRepo: 'libs-release', snapshotRepo: 'libs-snapshot'
                     def buildInfo = rtMaven.run pom: 'pom.xml', goals: 'clean install -Dmaven.test.skip=true'
                     server.publishBuildInfo buildInfo
 
