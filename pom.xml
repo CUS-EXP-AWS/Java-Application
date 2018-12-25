@@ -9,6 +9,18 @@
        <maven.test.skip>true</maven.test.skip>
    </properties>
 
+   <repositories>
+     <repository>
+     	<id>central</id>
+     	<url>http://18.188.14.221:8081/artifactory/libs-release</url>
+     	</repository>
+
+     	<repository>
+     	<id>snapshots</id>
+     	<url>http://18.188.14.221:8081/artifactory/libs-snapshot</url>
+     	</repository>
+ 	</repositories>
+
     <dependencies>
         <dependency>
             <groupId>junit</groupId>
